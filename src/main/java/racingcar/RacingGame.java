@@ -19,5 +19,8 @@ public class RacingGame {
             cars.moveAll();
             OutputView.printRoundResult(cars.getCars());
         }
+
+        List<String> winners = cars.getWinners();
+        OutputView.printWinners(winners);
     }
 }
