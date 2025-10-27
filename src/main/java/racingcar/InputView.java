@@ -15,4 +15,19 @@ public class InputView {
                 .map(name -> name.trim())
                 .toList();
     }
+
+    public static int readTryCount() {
+        System.out.println("시도할 횟수는 몇 회인가요?");
+        String inputCount = Console.readLine();
+
+        try {
+            int count = Integer.parseInt(inputCount);
+            if (count <= 0) {
+                throw new IllegalArgumentException("시도 횟수는 1 이상의 숫자여야 합니다.");
+            }
+            return count;
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("시도 횟수는 숫자여야 합니다.");
+        }
+    }
 }
