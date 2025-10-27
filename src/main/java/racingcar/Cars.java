@@ -26,13 +26,6 @@ public class Cars {
         return cars;
     }
 
-//    public void printStatus() {
-//        for (Car car : cars) {
-//            System.out.println(car.getName() + " : " + car.getPositionSymbol());
-//        }
-//        System.out.println();
-//    }
-
     public List<String> getWinners() {
         int maxPosition = cars.stream()
                 .mapToInt(car -> car.getPosition())

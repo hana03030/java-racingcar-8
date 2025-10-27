@@ -13,13 +13,19 @@ public class RacingGame {
 
         // 실행 결과 안내
         OutputView.printExecutionResult();
+        runRace(cars, tryCount);
+        printWinners(cars);
+    }
 
+    private void runRace(Cars cars, int tryCount) {
         // 시도 횟수만큼 경주 반복
         for (int i = 0; i < tryCount; i++) {
             cars.moveAll();
             OutputView.printRoundResult(cars.getCars());
         }
+    }
 
+    private void printWinners(Cars cars) {
         List<String> winners = cars.getWinners();
         OutputView.printWinners(winners);
     }
