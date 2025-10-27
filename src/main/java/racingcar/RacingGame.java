@@ -12,12 +12,12 @@ public class RacingGame {
         Cars cars = new Cars(carNames);
 
         // 실행 결과 안내
-        System.out.println("\n실행 결과");
+        OutputView.printExecutionResult();
 
         // 시도 횟수만큼 경주 반복
         for (int i = 0; i < tryCount; i++) {
             cars.moveAll();
-            cars.printStatus();
+            OutputView.printRoundResult(cars.getCars());
         }
     }
 }
