@@ -47,12 +47,13 @@
 ## 커밋 단위 계획
 | 단계 | 커밋 메시지 예시 |
 |------|------------------|
-| 1 | feat: 자동차 이름 입력 기능 구현 |
-| 2 | feat: 시도 횟수 입력 기능 구현 |
-| 3 | feat: 자동차 객체 생성 및 초기화 |
-| 4 | feat: 랜덤 전진 조건 및 이동 로직 추가 |
-| 5 | feat: 경주 진행 및 결과 출력 기능 구현 |
-| 6 | feat: 우승자 판별 기능 추가 |
-| 7 | refactor: 입력 검증 로직 분리 및 예외 처리 강화 |
-| 8 | refactor: 메서드 분리 및 네이밍 개선 |
-| 9 | test: 자동차 이동 및 우승자 판별 테스트 추가 |
+| 1 | feat(racingcar): add main entry point and input prompts |
+| 2 | feat(racingcar): implement car name input feature |
+| 3 | feat(racingcar): implement try count input feature |
+| 4 | feat(racingcar): add Car class with movement logic |
+| 5 | feat(racingcar): add Cars class for managing multiple cars |
+| 6 | feat(racingcar): implement RacingGame to control race flow |
+| 7 | feat(racingcar): add OutputView for printing results |
+| 8 | feat(racingcar): add winner determination logic |
+| 9 | refactor(racingcar): improve input validation and method separation |
+| 10 | test(racingcar): add tests for car movement and winner calculation |
